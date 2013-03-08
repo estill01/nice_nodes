@@ -1,0 +1,16 @@
+# NiceNodes
+
+Neo4j Rails helpers to make declaring Modesl and Relationships in Neo4jrb... nicers.
+
+E.g.
+Class MyModel < Model
+end
+
+instead of
+
+class MyModel < Neo4j::Rails::Model
+end
+
+
+And get some nice other convenience attributes and methods.
+
