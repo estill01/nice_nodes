@@ -1,14 +1,10 @@
-require 'active_model/mass_assignment_security'
-
 class Model < Neo4j::Rails::Model
-  include ActiveModel::MassAssignmentSecurity
   include Neo4j::Rails::Versioning
   property :created_at
   property :updated_at
 end
 
 class Relationship < Neo4j::Rails::Relationship
-  include ActiveModel::MassAssignmentSecurity
   property :created_at
   property :updated_at
 end
